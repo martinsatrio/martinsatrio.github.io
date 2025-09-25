@@ -65,7 +65,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url('assets/img/radarbanner.png') center/cover no-repeat;
   opacity: 0.5;
   z-index: 1;
 }
