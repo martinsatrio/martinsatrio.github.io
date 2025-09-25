@@ -1,36 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home — Martin Satrio</title>
-<meta name="description" content="Ported from the user's Wix site.">
-<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="./assets/style.css"><script defer src="./assets/script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Index — Martin Satrio</title>
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body data-page="index.html">
-<header class="header"><div class="container nav">
-  <a class="brand" href="./index.html" aria-label="Home"><span class="logo" aria-hidden="true"></span><span id="brand-text">Martin Satrio</span></a>
-  <nav class="links" aria-label="Primary">
-    <a href="./about.html">About</a>
-    <a href="./research.html">Research</a>
-    <a href="./publications.html">Publications</a>
-    <a href="./cv.html">CV</a>
-    <a href="./contact.html">Contact</a>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
   </nav>
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">☀︎/☾</button>
-</div></header>
-<main class="main"><div class="container">
-<section class="hero">
-  <h1>Welcome!</h1>
-  <p>I am a Post-Doctoral Research Associate at the Cooperative Institute for Severe and High-Impact Weather Research and Operations (CIWRO) at the University of Oklahoma. I have previously earned my Ph.D., M. S., and B. S. in Meteorology as well as my B. A. in Mathematics all from the University of Oklahoma. My main area of research is using research and operational radar data to investigate severe weather, especially relating to supercell and tornado dynamics.</p>
-</section>
-<div class="grid" style="grid-template-columns:repeat(12,1fr);margin-top:1rem">
-  <a class="card" style="grid-column:span 6" href="./research.html"><h2>Research</h2><p class="muted">Severe weather, radar data, supercell and tornado dynamics.</p></a>
-  <a class="card" style="grid-column:span 6" href="./publications.html"><h2>Highlighted Publication</h2><p class="muted">Understanding how complex terrain impacts tornado dynamics Using high‑resolution numerical simulations (2020).</p></a>
-  <a class="card" style="grid-column:span 6" href="./about.html"><h2>About</h2><p class="muted">Affiliations and background.</p></a>
-  <a class="card" style="grid-column:span 6" href="./contact.html"><h2>Contact</h2><p class="muted">Get in touch by email or visit the National Weather Center.</p></a>
-</div>
-</div></main>
-<footer class="footer"><div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-</body></html>
+  <main>
+    <h1>Welcome</h1><p>Homepage hero and intro here.</p>
+  </main>
+  <footer>© <span id="year"></span> Martin Satrio. All rights reserved.</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
