@@ -1,3 +1,15 @@
+/* Name Banner Styles */
+.name-banner {
+  width: 100%;
+  background: linear-gradient(90deg, #e3f0ff 0%, #cbe6ff 100%);
+  color: #205080;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.1rem 0 1rem 0;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
 
 /* SoftLight Theme — modern, sleek, and inviting */
 :root{
