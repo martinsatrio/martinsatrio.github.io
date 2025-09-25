@@ -65,12 +65,6 @@ nav.navbar{
 
 .nav-toggle{display:none; border:1px solid var(--outline); background:white; padding:.5rem .7rem; border-radius:10px}
 
-.right-links {
-  margin-left: auto; /* pushes this group to the right */
-  display: flex;
-  gap: 1rem; /* spacing between links */
-}
-
 .hero{
   padding:4.5rem 0 2.5rem;
 }
