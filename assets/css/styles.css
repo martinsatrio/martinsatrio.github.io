@@ -52,13 +52,22 @@
 .name-banner {
   width: 100%;
   position: relative;
-  background: url('assets/img/radarbanner.png') center/cover no-repeat;
   min-height: 5.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0.5rem 0 0.5rem 0;
+  /* Remove background property here */
+}
+
+.name-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('assets/img/radarbanner.png') center/cover no-repeat;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .name-banner-text {
@@ -74,15 +83,6 @@
   box-shadow: 0 2px 16px rgba(0,0,0,0.12);
   position: relative;
   z-index: 2;
-}
-.name-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('assets/img/radarbanner.png') center/cover no-repeat;
-  opacity: 0.5;
-  z-index: 1;
-  /* removed border-radius: inherit; */
 }
 
 /* SoftLight Theme — modern, sleek, and inviting */
