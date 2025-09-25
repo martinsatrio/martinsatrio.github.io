@@ -4,23 +4,50 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications — Martin Satrio</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="description" content="Publications by Martin Satrio.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>Publications</h1><p>Publications list here.</p>
-  </main>
-  <footer>© <span id="year"></span> Martin Satrio. All rights reserved.</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="nav-wrap">
+    <nav>
+      <div class="brand">
+        <div class="name">Martin Satrio, Ph.D.</div>
+        <span class="tag">Meteorology • Radar • Severe Weather</span>
+      </div>
+      <div class="navlinks" id="navlinks">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Open Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
+      <div class="mobile-menu" aria-label="Mobile Menu">
+        <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+        <a href="research.html" onclick="this.parentElement.classList.remove('open')">Research</a>
+        <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
+        <a href="cv.html" onclick="this.parentElement.classList.remove('open')">CV</a>
+        <a href="contact.html" onclick="this.parentElement.classList.remove('open')">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+<div class="page">
+  <h1>Publications</h1>
+  <div class='pub-list'>
+  <article class='pub'><cite>Satrio, M. A., M. C. Coniglio, E. N. Rasmussen, C. L. Ziegler, D. M. Stechman, and A. E. Reinhard, 2024 (in-review): On the Low-Level Mesocyclone Evolution of the 17 May 2019 McCook / Farnam, Nebraska Tornadic Supercell Observed during TORUS.</cite></article>
+  <article class='pub'><cite>Satrio, M. A., D. J. Bodine, A. E. Reinhart, T. Maruyama, and F. T. Lombardo, 2020: Understanding how Complex Terrain Impacts Tornado Dynamics using a Suite of High-Resolution Numerical Simulations. J. Atmos. Sci., 77(10), 3277–3300.</cite><small><a href='https://doi.org/10.1175/JAS-D-19-0321.1'>DOI</a></small></article>
+  <article class='pub'><cite>Wagner, M., M. C. Coniglio, E. N. Rasmussen, D. Candela, M. A. Satrio, E. Tirone, 2024 (in-review): Harnessing UAS Imagery to Better Characterize High-Wind Damage and Understand Tornado Evolution.</cite></article>
+  <article class='pub'><cite>Flournoy, M. D., A. W. Lyza, M. A. Satrio, M. R. Diedrichsen, M. C. Coniglio, S. Waugh, 2022: A Climatology of Cell Mergers with Supercells and their Association with Mesocyclone Evolution. Mon. Wea. Rev., 150(2), 451–461.</cite><small><a href='https://doi.org/10.1175/MWR-D-21-0204.1'>DOI</a></small></article>
+  <article class='pub'><cite>Anderson, M. E., D. G. Schneider, J. L. Buckles, D. J. Bodine, A. E. Reinhart, M. A. Satrio, and T. Maruyama, 2022: Terrain effects on the 13 April 2018 Mountainburg, Arkansas EF2 tornado. J. Operational Meteor., 10(2), 18–29.</cite><small><a href='https://doi.org/10.15191/nwajom.2022.1002'>DOI</a></small></article>
+</div>
+</div>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

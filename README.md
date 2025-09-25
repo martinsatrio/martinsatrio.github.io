@@ -1,2 +1,3 @@
-# martinsatrio.github.io
-Martin Satrio's Personal Website
+# Martin Satrio — Personal Site
+
+Static HTML site ready for GitHub Pages.

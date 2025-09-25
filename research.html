@@ -4,23 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research — Martin Satrio</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="description" content="Research & teaching — severe weather, radar, supercells.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>Research</h1><p>Research content here.</p>
-  </main>
-  <footer>© <span id="year"></span> Martin Satrio. All rights reserved.</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="nav-wrap">
+    <nav>
+      <div class="brand">
+        <div class="name">Martin Satrio, Ph.D.</div>
+        <span class="tag">Meteorology • Radar • Severe Weather</span>
+      </div>
+      <div class="navlinks" id="navlinks">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Open Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
+      <div class="mobile-menu" aria-label="Mobile Menu">
+        <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+        <a href="research.html" onclick="this.parentElement.classList.remove('open')">Research</a>
+        <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
+        <a href="cv.html" onclick="this.parentElement.classList.remove('open')">CV</a>
+        <a href="contact.html" onclick="this.parentElement.classList.remove('open')">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+<div class="page">
+  <h1>Research & Teaching</h1>
+  
+<h2>Post-Doctoral Research</h2>
+<p><strong>Supervisors:</strong> Dr. Dan Stechman and Dr. Mike Coniglio</p>
+<p>As a Post-Doctoral Research Associate at CIWRO, my main focus is on continuing our understanding of supercell thunderstorms and the conditions attendant to tornadogenesis through observational methods. Specifically, I am looking through the wealth of observational data that were collected during the 2019 and 2022 field phases of the Targeted Observation by Radars and UAS (Unmanned Aircraft Systems) of Supercells (TORUS) project.</p>
+<p>Using the two deployed airborne radars mounted onto P3 aircraft, the ground-based NOXP mobile radar, and nearby operational (WSR-88D) radars, we aim to analyze individual case studies through four-dimensional Doppler wind syntheses and diabatic Lagrangian analyses, following the work I did in my PhD career.</p>
+<p>By the end, we hope to attain a longitudinal analyses of the cataloged cases in terms of left-flank and updraft characterizations to improve our conceptual understanding of supercells with the ultimate goal of improving model guidance.</p>
+
+<h2>PhD Research (August 2019 – July 2023)</h2>
+<p><strong>Dissertation Title:</strong> A Kinematic and Thermodynamic Analysis of the 17 May 2019 McCook / Farnam, Nebraska Tornadic Supercell</p>
+<p><strong>Advisors:</strong> Dr. Erik Rasmussen and Dr. Mike Coniglio • <a href="https://shareok.org/handle/11244/338761">Link to Dissertation</a></p>
+<p><em>Abstract (excerpt):</em> The Targeted Observation by Radars and UAS of Supercells field project successfully deployed on a cyclic tornadic supercell in southwest Nebraska on 17 May 2019. This case study uses data from the two airborne radars mounted onto the P3 along with the ground-based NOXP radar for a triple-Doppler wind synthesis from 22:57 UTC to 00:36 UTC. Wind synthesis and gridded reflectivity are ingested into a diabatic Lagrangian algorithm (DLA) to obtain gridded thermodynamic information including θ, θv, and various mixing ratios. Low-level analyses show classic supercell behavior and evolution of the low-level mesocyclone in relation to RFD processes. Evidence indicates baroclinic generation of streamwise vorticity within forward-flank gradients and persistent stretching aligned with the low-level circulation during the longer-lived tornado period.</p>
+
+<h2>PhD General Exam (Completed June 2021)</h2>
+<p><strong>Topic:</strong> A Proposed Observation Network to Investigate Deep Convection Initiation and Early Evolution of Supercells in the Great Plains and Southeast</p>
+<p>Committee: Dr. Mike Coniglio (Chair), Dr. Erik Rasmussen, Dr. Mike Biggerstaff, Dr. Cameron Homeyer, Dr. Xuguang Wang</p>
+
+<h2>Field Projects</h2>
+<p>PERiLS 2022 & 2023 • TORUS 2022 • TORUS‑LItE 2023 — roles spanning NSSL Mobile Mesonets, windsondes, and LiDAR.</p>
+
+</div>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

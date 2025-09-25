@@ -4,23 +4,58 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Martin Satrio</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="description" content="Contact information and form.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>Contact</h1><form><input type='text' placeholder='Your Name'><button>Submit</button></form>
-  </main>
-  <footer>© <span id="year"></span> Martin Satrio. All rights reserved.</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="nav-wrap">
+    <nav>
+      <div class="brand">
+        <div class="name">Martin Satrio, Ph.D.</div>
+        <span class="tag">Meteorology • Radar • Severe Weather</span>
+      </div>
+      <div class="navlinks" id="navlinks">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Open Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
+      <div class="mobile-menu" aria-label="Mobile Menu">
+        <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+        <a href="research.html" onclick="this.parentElement.classList.remove('open')">Research</a>
+        <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
+        <a href="cv.html" onclick="this.parentElement.classList.remove('open')">CV</a>
+        <a href="contact.html" onclick="this.parentElement.classList.remove('open')">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+<div class="page">
+  <h1>Contact</h1>
+  <div class="contact">
+    <div class="info">
+      <h3>Direct</h3>
+      <p><strong>Email</strong>: <a href="mailto:satriomartin@ou.edu">satriomartin@ou.edu</a> • <a href="mailto:martin.satrio@noaa.gov">martin.satrio@noaa.gov</a></p>
+      <p><strong>Address</strong>: National Weather Center, University of Oklahoma, 120 David L. Boren Blvd, Norman, OK 73072</p>
+    </div>
+    <form action="https://formspree.io/f/your-endpoint" method="POST">
+      <input type="text" name="name" placeholder="Full name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="text" name="subject" placeholder="Subject">
+      <textarea name="message" placeholder="Leave a message" required></textarea>
+      <button class="btn primary" type="submit">Send message</button>
+      <p class="hint">Replace the <code>action</code> URL with your Formspree endpoint or use a <code>mailto:</code> link.</p>
+    </form>
+  </div>
+</div>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -3,24 +3,49 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cv — Martin Satrio</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+  <title>CV — Martin Satrio</title>
+  <meta name="description" content="Curriculum Vitae for Martin Satrio.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>Curriculum Vitae</h1><a href='assets/Martin_Satrio_CV.pdf'>Download CV (PDF)</a>
-  </main>
-  <footer>© <span id="year"></span> Martin Satrio. All rights reserved.</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="nav-wrap">
+    <nav>
+      <div class="brand">
+        <div class="name">Martin Satrio, Ph.D.</div>
+        <span class="tag">Meteorology • Radar • Severe Weather</span>
+      </div>
+      <div class="navlinks" id="navlinks">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Open Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
+      <div class="mobile-menu" aria-label="Mobile Menu">
+        <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+        <a href="research.html" onclick="this.parentElement.classList.remove('open')">Research</a>
+        <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
+        <a href="cv.html" onclick="this.parentElement.classList.remove('open')">CV</a>
+        <a href="contact.html" onclick="this.parentElement.classList.remove('open')">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+<div class="page">
+  <h1>Curriculum Vitae</h1>
+  <p>Download a full PDF copy of my CV here:</p>
+  <p><a class="btn primary" href="assets/Martin_Satrio_CV.pdf" download>Download CV (PDF)</a></p>
+  <h2>Contact</h2>
+  <p><strong>National Weather Center</strong><br>University of Oklahoma<br>120 David L. Boren Blvd<br>Norman, OK 73072</p>
+  <p><a href="mailto:satriomartin@ou.edu">satriomartin@ou.edu</a> • <a href="mailto:martin.satrio@noaa.gov">martin.satrio@noaa.gov</a></p>
+</div>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -3,24 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Index — Martin Satrio</title>
-  <link href="assets/css/style.css" rel="stylesheet">
+  <title>Home — Martin Satrio</title>
+  <meta name="description" content="Martin Satrio — meteorology researcher focused on severe weather, radar, and supercell/tornado dynamics.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <h1>Welcome</h1><p>Homepage hero and intro here.</p>
-  </main>
-  <footer>© <span id="year"></span> Martin Satrio. All rights reserved.</footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="nav-wrap">
+    <nav>
+      <div class="brand">
+        <div class="name">Martin Satrio, Ph.D.</div>
+        <span class="tag">Meteorology • Radar • Severe Weather</span>
+      </div>
+      <div class="navlinks" id="navlinks">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Open Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
+      <div class="mobile-menu" aria-label="Mobile Menu">
+        <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
+        <a href="research.html" onclick="this.parentElement.classList.remove('open')">Research</a>
+        <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
+        <a href="cv.html" onclick="this.parentElement.classList.remove('open')">CV</a>
+        <a href="contact.html" onclick="this.parentElement.classList.remove('open')">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+<header class="hero">
+  <div class="lead">
+    <span class="eyebrow">Welcome</span>
+    <h1>Researcher in Severe Weather, Radar, and Supercell/Tornado Dynamics</h1>
+    <p class="subtitle">Welcome! I am a Post-Doctoral Research Associate at the Cooperative Institute for Severe and High-Impact Weather Research and Operations (CIWRO) at the University of Oklahoma. I have previously earned my Ph.D., M. S., and B. S. in Meteorology as well as my B. A. in Mathematics all from the University of Oklahoma. My main area of research is using research and operational radar data to investigate severe weather, especially relating to supercell and tornado dynamics.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="research.html">Explore research</a>
+      <a class="btn" href="publications.html">See publications</a>
+      <a class="btn" href="contact.html">Contact me</a>
+    </div>
+    <div style="margin-top:18px;padding-top:12px;border-top:1px dashed var(--line)">
+      <strong>Highlighted publication:</strong>
+      <em>"Understanding How Complex Terrain Impacts Tornado Dynamics Using a Suite of High-Resolution Numerical Simulations" (Satrio et al. 2020)</em> — <a href="https://doi.org/10.1175/JAS-D-19-0321.1">doi</a>
+    </div>
+  </div>
+  <figure class="portrait" aria-label="Portrait placeholder">
+    <img src="https://images.unsplash.com/photo-1521109464564-2fa2faa95858?q=80&w=1200&auto=format&fit=crop" alt="Clouds over plains" />
+  </figure>
+</header>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
