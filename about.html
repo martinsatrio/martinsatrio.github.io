@@ -1,64 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — Martin Satrio</title>
-  <meta name="description" content="About Martin Satrio — background and education.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — SoftLight</title>
+  <meta name="description" content="A clean, modern personal website with a soft light theme.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="nav-wrap">
-    <nav>
-      <div class="brand">
-        <div class="name">Martin Satrio, Ph.D.</div>
-        <span class="tag">Meteorology • Radar • Severe Weather</span>
-      </div>
-      <div class="navlinks" id="navlinks">
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar nav">
+      <a class="brand" href="index.html" aria-label="Go to homepage">
+        <span class="brand-logo">SL</span>
+        <span class="brand-name">SoftLight</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
         <a href="about.html">About</a>
+        <a href="work.html">Current Work</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
-      </div>
-      <button class="hamburger" aria-label="Open Menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
-      <div class="mobile-menu" aria-label="Mobile Menu">
-        <a href="about.html" onclick="this.parentElement.classList.remove('open')">About</a>
-        <a href="research.html" onclick="this.parentElement.classList.remove('open')">Research</a>
-        <a href="publications.html" onclick="this.parentElement.classList.remove('open')">Publications</a>
-        <a href="cv.html" onclick="this.parentElement.classList.remove('open')">CV</a>
-        <a href="contact.html" onclick="this.parentElement.classList.remove('open')">Contact</a>
-      </div>
-    </nav>
-  </div>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    </div>
+    </div>
+  </header>
 
-<div class="page">
-  <h1>About Me</h1>
-  <p>I graduated from the University of Oklahoma with a dual-degree with a B. S. in Meteorology and B. A. in Mathematics. For my Master's work, I remained at the University of Oklahoma at the Advanced Radar Research Center under the advisement of Dr. David Bodine and Dr. Anthony Reinhart. The focus of my research was investigating the impact of surface terrain on tornado dynamics through large-eddy vortex simulations.</p><p>For my PhD research, I conducted a detailed case study on the 17 May 2019 tornadic supercell observed during TORUS through multi-Doppler wind syntheses and thermodynamic retrievals.</p><p>Currently, I am working as a post-doctoral research associate at the Cooperative Institute for Severe and High-Impact Weather Research and Operations. My current research involves establishing a longitudinal analysis of updraft and forward-flank characteristics of supercells using both ground-based and airborne radar data from the multi-year TORUS field campaign.</p><p>Outside of work, I enjoy watching college football, traveling, trying new foods, and spending time with my wife and two dogs!</p>
-  <h2>Education</h2>
+  <main id="content" class="container">
+    
+  <section class="section">
+    <h2>About Me</h2>
+    <div class="prose">
+      <p>Write a short, friendly bio here. Share what you enjoy working on, your values, and what motivates you. Keep it warm and human.</p>
+      <p>You might also add a high‑level career summary, a few personal interests, and a note on how you like to collaborate.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Highlights</h2>
+    <ul class="list">
+      <li><strong>Strengths:</strong> e.g., systems thinking, rapid prototyping, clear writing</li>
+      <li><strong>Domains:</strong> e.g., HCI, ML Safety, Developer Experience</li>
+      <li><strong>Tools:</strong> e.g., Python, Typescript, PyTorch</li>
+    </ul>
+  </section>
   
-<ul>
-  <li><strong>Aug 2019 – June 2023</strong> — University of Oklahoma, <em>Ph.D. in Meteorology</em><br>
-      Dissertation: “A Triple-Doppler and Diabatic Lagrangian Analysis of the 17 May 2019 McCook / Farnam, NE Tornadic Supercell during TORUS”<br>
-      General Exam: “A Proposed Observation Network to Investigate Deep Convection Initiation and Early Evolution of Supercells in the Great Plains and Southeast”<br>
-      GPA 4.0
-  </li>
-  <li><strong>June 2017 – July 2019</strong> — University of Oklahoma, <em>M.S. in Meteorology</em><br>
-      Thesis: <a href="https://shareok.org/handle/11244/300446">“The Effects of Terrain on an Idealized Tornado using a Large-Eddy Simulation”</a><br>
-      GPA 4.0
-  </li>
-  <li><strong>Aug 2013 – May 2017</strong> — University of Oklahoma, <em>B.S. in Meteorology</em> and <em>B.A. in Mathematics</em><br>
-      GPA 4.0 (Summa Cum Laude)
-  </li>
-</ul>
+  </main>
 
-</div>
-
-  <footer>
-    <div class="container">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="small">© <span id="year"></span> Your Name. All rights reserved.</div>
+      <div class="small">Built with ♥ using the SoftLight theme.</div>
+    </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
