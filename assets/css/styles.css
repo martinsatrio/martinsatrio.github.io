@@ -52,7 +52,6 @@
 .name-banner {
   width: 100%;
   position: relative;
-  background: linear-gradient(90deg, #e3f0ff 0%, #cbe6ff 100%);
   background: url('assets/img/radarbanner.png') center/cover no-repeat;
   min-height: 5.5rem;
   display: flex;
@@ -83,7 +82,7 @@
   background: url('assets/img/radarbanner.png') center/cover no-repeat;
   opacity: 0.5;
   z-index: 1;
-  border-radius: inherit;
+  /* removed border-radius: inherit; */
 }
 
 /* SoftLight Theme — modern, sleek, and inviting */
