@@ -58,7 +58,7 @@
   justify-content: center;
   margin: 0;
   padding: 0.5rem 0 0.5rem 0;
-  /* Remove background property here */
+  background: #222a32;
 }
 
 .name-banner::before {
@@ -77,9 +77,9 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding: 0.5rem 2.2rem;
-  border-radius: 18px;
-  background: rgba(0,0,0,0.65);
-  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
   position: relative;
   z-index: 2;
 }
