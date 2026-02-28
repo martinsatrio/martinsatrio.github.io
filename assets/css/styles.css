@@ -203,6 +203,25 @@ footer.site-footer{
 
 .prose p{color:var(--muted)}
 
+.work-block{
+  margin-top: 1.15rem;
+}
+
+.work-block h3{
+  margin: 0.2rem 0 0.45rem;
+  font-size: 1.06rem;
+}
+
+.work-bullets{
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.work-bullets li{
+  margin: 0.4rem 0;
+}
+
 .list{display:grid; gap:.75rem}
 .list li{list-style:none; padding:.9rem 1rem; border:1px solid var(--outline); border-radius: var(--radius-md); background:white}
 .list strong{color:var(--text)}
