@@ -4,113 +4,149 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Martin Satrio</title>
-  <meta name="description" content="A clean, modern personal website with a soft light theme.">
+  <meta name="description" content="Background and education of Martin Satrio, meteorological radar scientist and University of Oklahoma Ph.D.">
+  <meta property="og:title" content="About — Martin Satrio">
+  <meta property="og:image" content="https://martinsatrio.github.io/assets/img/og-image.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="name-banner"><span class="name-banner-text">Martin Satrio, Ph.D.</span></div>
   <header class="site-header">
     <div class="container">
-      <div class="navbar nav">
+      <a class="brand" href="index.html">Martin Satrio</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="work.html">Current Work</a>
-        <a href="research.html">Past Research</a>
+        <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-    </div>
     </div>
   </header>
 
-
-  <main id="content" class="container">
-    
-  <section class="hero">
-    <div class="hero-card">
-      <h2>About Me</h2>
-      <p class="lead">I graduated from the University of Oklahoma with a dual-degree with a B. S. in 
-        Meteorology and B. A. in Mathematics. For my Master's work, I remained at the 
-        University of Oklahoma at the Advanced Radar Research Center under the advisement 
-        of Dr. David Bodine and Dr. Anthony Reinhart. The focus of my research was 
-        investigating the impact of surface terrain on tornado dynamics through 
-        large-eddy vortex simulations. For my doctoral research, I conducted a detailed case 
-        study on the 17 May 2019 tornadic supercell observed during TORUS through 
-        multi-Doppler wind syntheses and thermodynamic retrievals under the advisement of 
-        Dr. Michael Coniglio and Dr. Erik Rasmussen. Both studies are now first-authored published work 
-        which you can find 
-        <a href="https://doi.org/10.1175/JAS-D-19-0321.1">here</a> and 
-        <a href="https://doi.org/10.1175/MWR-D-24-0051.1">here</a>. I also completed
-        my postdoctoral research at the Cooperative Institute for Severe and High-Impact
-        Weather Research and Operations (CIWRO), conducting a longitudinal analysis of
-        supercell updrafts using multi-Doppler analyses. <br><br>
-        <a href="research.html" class="btn small-btn" style="margin-left:1rem;">See My Past Research</a>
-      </p><br>
-      <p class="lead">Starting in September of 2025, I joined 
-        <a href="https://www.rainmaker.com/">Rainmaker Technology Corporation</a> as a 
-        Meteorological Radar Scientist, working on the research team to design and optimize
-        radar-based QPE products, as well as process, analyze, and extract insights from radar
-        and other meteorological data to improve cloud seeding strategies. Our end goal within
-        Rainmaker is to support sustainable water resource management through 
-        responsible weather modification. <br><br>
-        <a href="work.html" class="btn small-btn" style="margin-left:1rem;">See My Current Work</a>
-      </p><br>
-      <p class="lead">Outside of research, I enjoy golfing, watching college football, and spending
-        time with my wife and two dogs. I also enjoy traveling and exploring new cuisines.</p>
-      <div class="about-images-row">
-        <img src="assets/img/personal1.jpg" alt="Portrait 1" class="about-img portrait">
-        <img src="assets/img/personal2.jpg" alt="Landscape" class="about-img landscape">
-        <img src="assets/img/personal3.jpg" alt="Portrait 2" class="about-img portrait">
+  <main class="container">
+    <section class="page-head about-intro">
+      <div>
+        <h1>About me</h1>
+        <p>I graduated from the University of Oklahoma with a dual degree: a B.S. in Meteorology and a
+          B.A. in Mathematics. For my Master's, I stayed at OU at the Advanced Radar Research Center, advised by
+          Dr. David Bodine and Dr. Anthony Reinhart, and used large-eddy vortex simulations to study how surface
+          terrain affects tornado dynamics.</p>
+        <p>For my doctoral research, advised by Dr. Michael Coniglio and Dr. Erik Rasmussen, I did a detailed case
+          study of the 17 May 2019 tornadic supercell observed during TORUS, using multi-Doppler wind syntheses and
+          thermodynamic retrievals. Both projects are published as first-author papers
+          (<a href="https://doi.org/10.1175/JAS-D-19-0321.1">JAS, 2020</a> and
+          <a href="https://doi.org/10.1175/MWR-D-24-0051.1">MWR, 2025</a>). I then did a postdoc at the
+          Cooperative Institute for Severe and High-Impact Weather Research and Operations (CIWRO), where I
+          analyzed supercell updrafts across many cases using multi-Doppler analyses.</p>
+        <p>In September 2025 I joined <a href="https://www.rainmaker.com/">Rainmaker Technology Corporation</a> as a
+          Meteorological Radar Scientist. On the research team, I design and optimize radar-based QPE products and
+          analyze radar and other meteorological data to improve cloud seeding strategies. The goal is to
+          support sustainable water resource management through responsible weather modification.</p>
+        <p>Outside of work, I enjoy golfing, watching college football, and spending time with my wife and our two
+          dogs. I also love traveling and trying new cuisines.</p>
+        <div class="btn-row">
+          <a class="btn" href="work.html">Current work</a>
+          <a class="btn outline" href="research.html">Past research</a>
+        </div>
       </div>
-    </div>
-  </section>
+      <img class="headshot" src="assets/img/headshot.webp" alt="Portrait of Martin Satrio" width="640" height="800">
+    </section>
 
-  <section class="section">
-    <h2>Education Overview</h2>
-    <ul class="list">
-      <li>
-        <div><strong>Ph.D in Meteorology, University of Oklahoma</strong></div>
-        <div><strong>Aug 2019 - June 2023</strong></div>
-        <br>
-        <div><strong>Advisors:</strong> Dr. Michael Coniglio and Dr. Erik Rasmussen</div>
-        <div><strong>Dissertation:</strong> <em>"A Triple-Doppler and Diabatic Lagrangian Analysis of the 17 May 2019 McCook / Farnam, NE Tornadic Supercell during TORUS"</em></div>
-        <div><strong>General Exam:</strong> <em>"A Proposed Observation Network to Investigate Deep Convection Initiation and Early Evolution of Supercells in the Great Plains and Southeast"</em></div>
-      </li>
-      <li>
-        <div><strong>M.S. in Meteorology, University of Oklahoma</strong></div>
-        <div><strong>June 2017 - July 2019</strong></div>
-        <br>
-        <div><strong>Advisors:</strong> Dr. David Bodine and Dr. Anthony Reinhart</div>
-        <div><strong>Thesis:</strong> <em>"The Effects of Terrain on an Idealized Tornado using a Large-Eddy Simulation"</em></div>
-      </li>
-      <li>
-        <div><strong>B.S. in Meteorology & B.A. in Mathematics, University of Oklahoma</strong></div>
-        <div><strong>Aug 2013 - May 2017</strong></div>
-        <br>
-        <div><strong>Capstone:</strong> <em>"The Effects of Veer-Back-Veer Wind Profiles on Storm Mode"</em></div>
-        <div><strong>GPA:</strong> 4.00 / 4.00 (Summa Cum Laude)</div>
-      </li>
-    </ul>
-  </section>
-  
+    <div class="gallery" style="margin-bottom:3rem">
+      <img src="assets/img/personal1.webp" alt="Personal photo" loading="lazy">
+      <img src="assets/img/personal2.webp" alt="Personal photo" loading="lazy" style="flex-grow:1.6">
+      <img src="assets/img/personal3.webp" alt="Personal photo" loading="lazy">
+    </div>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <time>2025 – present</time>
+          <div>
+            <h3>Meteorological Radar Scientist, Rainmaker Technology Corporation</h3>
+            <p>Radar QPE and seeding-signature validation, analysis tooling, and reporting. <a href="work.html">More →</a></p>
+          </div>
+        </li>
+        <li>
+          <time>2023 – 2025</time>
+          <div>
+            <h3>Postdoctoral Research Associate, CIWRO</h3>
+            <p>Multi-Doppler and diabatic Lagrangian analyses of TORUS supercells; CM1 simulations of wind-profile effects; DELTA and LIFT field campaigns.</p>
+          </div>
+        </li>
+        <li>
+          <time>2019 – 2023</time>
+          <div>
+            <h3>Graduate Research Assistant, CIWRO &amp; OU School of Meteorology</h3>
+            <p>Doctoral research on the 17 May 2019 TORUS supercell; PERiLS, TORUS, and TORUS-LiTE field campaigns.</p>
+          </div>
+        </li>
+        <li>
+          <time>2017 – 2019</time>
+          <div>
+            <h3>Graduate Research Assistant, Advanced Radar Research Center</h3>
+            <p>Terrain effects on tornado dynamics using large-eddy simulations; Atmospheric Imaging Radar field work.</p>
+          </div>
+        </li>
+        <li>
+          <time>2015 – 2024</time>
+          <div>
+            <h3>Teaching &amp; mentoring, OU School of Meteorology</h3>
+            <p>Lead instructor for Atmospheric Dynamics III (2023, 2024); capstone mentor; teaching assistant across dynamics, programming, and intro courses.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <time>2019 – 2023</time>
+          <div>
+            <h3>Ph.D. in Meteorology, University of Oklahoma</h3>
+            <p><strong>Dissertation:</strong> <em>A Kinematic and Thermodynamic Analysis of the 17 May 2019 McCook / Farnam, Nebraska Tornadic Supercell</em></p>
+            <p><strong>General Exam:</strong> <em>A Proposed Observation Network to Investigate Deep Convection Initiation and Early Evolution of Supercells in the Great Plains and Southeast</em></p>
+            <p><strong>Advisors:</strong> Dr. Michael Coniglio and Dr. Erik Rasmussen</p>
+          </div>
+        </li>
+        <li>
+          <time>2017 – 2019</time>
+          <div>
+            <h3>M.S. in Meteorology, University of Oklahoma</h3>
+            <p><strong>Thesis:</strong> <em>The Effects of Terrain on an Idealized Tornado using a Large-Eddy Simulation</em></p>
+            <p><strong>Advisors:</strong> Dr. David Bodine and Dr. Anthony Reinhart</p>
+          </div>
+        </li>
+        <li>
+          <time>2013 – 2017</time>
+          <div>
+            <h3>B.S. in Meteorology &amp; B.A. in Mathematics, University of Oklahoma</h3>
+            <p><strong>Capstone:</strong> <em>The Effects of Veer-Back-Veer Wind Profiles on Storm Mode</em></p>
+            <p>GPA 4.00 / 4.00, Summa Cum Laude</p>
+          </div>
+        </li>
+      </ol>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="small">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
-      <div class="small">martin@makerain.com</div>
+    <div class="container">
+      <span>© <span id="year"></span> Martin Satrio</span>
+      <nav aria-label="Social">
+        <a href="mailto:martin@makerain.com">Email</a>
+        <a href="https://www.linkedin.com/in/martin-satrio">LinkedIn</a>
+        <a href="assets/cv-llt.pdf">CV</a>
+      </nav>
     </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

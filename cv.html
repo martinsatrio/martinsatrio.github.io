@@ -3,53 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CV - Martin Satrio</title>
-  <meta name="description" content="A clean, modern personal website with a soft light theme.">
+  <title>CV — Martin Satrio</title>
+  <meta name="description" content="Curriculum vitae of Martin Satrio, Ph.D.">
+  <meta property="og:title" content="CV — Martin Satrio">
+  <meta property="og:image" content="https://martinsatrio.github.io/assets/img/og-image.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="name-banner"><span class="name-banner-text">Martin Satrio, Ph.D.</span></div>
   <header class="site-header">
     <div class="container">
-      <div class="navbar nav">
+      <a class="brand" href="index.html">Martin Satrio</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="work.html">Current Work</a>
-        <a href="research.html">Past Research</a>
+        <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-    </div>
     </div>
   </header>
 
-  <main id="content" class="container">
-    
-  <section class="section">
-    <h2>Curriculum Vitae</h2>
-    <div class="card">
-      <p>Download my latest CV below!</p><br>
-      <a class="btn" href="assets/cv-llt.pdf" download>Download CV (PDF)</a>
-    </div>
-  
+  <main class="container">
+    <section class="page-head">
+      <h1>Curriculum Vitae</h1>
+      <p>My full CV covering experience, education, publications, and awards.</p>
+      <div class="btn-row">
+        <a class="btn" href="assets/cv-llt.pdf" download>Download CV (PDF)</a>
+        <a class="btn outline" href="assets/cv-llt.pdf" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+      <object class="pdf-frame" data="assets/cv-llt.pdf" type="application/pdf" aria-label="CV preview">
+        <p class="small">Your browser can't preview PDFs here. <a href="assets/cv-llt.pdf">Download the CV</a> instead.</p>
+      </object>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="small">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
-      <div class="small">martin@makerain.com</div>
+    <div class="container">
+      <span>© <span id="year"></span> Martin Satrio</span>
+      <nav aria-label="Social">
+        <a href="mailto:martin@makerain.com">Email</a>
+        <a href="https://www.linkedin.com/in/martin-satrio">LinkedIn</a>
+        <a href="assets/cv-llt.pdf">CV</a>
+      </nav>
     </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

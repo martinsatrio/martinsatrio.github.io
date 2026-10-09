@@ -4,85 +4,169 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Current Work — Martin Satrio</title>
-  <meta name="description" content="A clean, modern personal website with a soft light theme.">
+  <meta name="description" content="Radar QPE, seeding-signature validation, and analysis tools Martin Satrio builds at Rainmaker Technology Corporation.">
+  <meta property="og:title" content="Current Work — Martin Satrio">
+  <meta property="og:image" content="https://martinsatrio.github.io/assets/img/radar-viewer-poster.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="name-banner"><span class="name-banner-text">Martin Satrio, Ph.D.</span></div>
   <header class="site-header">
     <div class="container">
-      <div class="navbar nav">
+      <a class="brand" href="index.html">Martin Satrio</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="work.html">Current Work</a>
-        <a href="research.html">Past Research</a>
+        <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-    </div>
     </div>
   </header>
 
-  <main id="content" class="container">
-    
-  <section class="hero">
-    <div class="hero-card">
-      <img src="assets/img/RainmakerTemplate.png" alt="Hero Banner" style="width:100%;height:auto;margin-bottom:1.5rem;border-radius:12px;object-fit:cover;">
+  <main class="container">
+    <section class="page-head">
+      <p class="eyebrow">Sep 2025 – present</p>
       <h1>Meteorological Radar Scientist</h1>
-      <h2><em>Rainmaker Technology Corporation, Norman, OK</em></h2>
-      <p class="lead">I am a Meteorological Radar Scientist on the research team at
-        <a href="https://www.rainmaker.com/">Rainmaker Technology Corporation</a>. Our mission is
-        to support sustainable water resource management through cloud seeding operations in the
-        United States and internationally. My role focuses on building and improving the radar-based
-        quantitative validation framework we use to assess seeding outcomes and improve operations.
-      </p>
-      <p class="lead" style="margin-top:0.9rem;">
-        Day-to-day, this means combining radar meteorology, Python-based analysis workflows, and
-        operational reporting across real-time and post-event modes. The work spans quality control,
-        multi-source data integration, quantitative precipitation estimation, dual-pol analysis, and
-        visualization tools used by both science and operations teams.
-      </p>
-      <div class="work-block">
-        <h3>Current Focus</h3>
-        <ul class="work-bullets">
-          <li>Designing and maintaining end-to-end QPE and validation workflows, including improved radar filtering and consistent mission-to-mission tracking.</li>
-          <li>Building internal analysis tools (including terrain-aware radar cross sections and interactive polygon-based workflows) that speed up post-mission diagnostics.</li>
-          <li>Integrating NEXRAD and in-house radar data with model guidance and observations (e.g., HRRR, ASOS/SNOTEL, satellite, and in-situ data) for quantitative assessment.</li>
-          <li>Producing short- and long-form technical reports that document seeding signatures, uncertainty, and case-specific lessons learned.</li>
-          <li>Contributing to forecast benchmarking work aimed at quantifying forecast quality and identifying the most decision-relevant predictors.</li>
+      <p><a href="https://www.rainmaker.com/">Rainmaker Technology Corporation</a>, Norman, OK. Rainmaker runs
+        cloud seeding operations to support sustainable water resource management. On the research team,
+        I own the radar side of the question everyone asks: <em>did the seeding work, and by how much?</em></p>
+
+      <div class="stats">
+        <div class="stat"><strong>55</strong><span>seeding signatures identified in the 2025–26 season</span></div>
+        <div class="stat"><strong>52</strong><span>IOPs analyzed as lead radar analyst (Pendleton, OR)</span></div>
+        <div class="stat"><strong>40+</strong><span>validation reports written in one season</span></div>
+        <div class="stat"><strong>27</strong><span>members in the QPE ensemble I developed</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="radar-viewer">
+      <p class="eyebrow">Featured project</p>
+      <h2>Radar Viewer &amp; analysis tool</h2>
+      <figure class="showcase">
+        <div class="media">
+          <video src="assets/img/radar-viewer-demo.mp4" poster="assets/img/radar-viewer-poster.jpg"
+                 autoplay muted loop playsinline controls preload="metadata"
+                 aria-label="Screen recording of the radar viewer stepping through volumes and opening a 3-D cross section"></video>
+        </div>
+        <figcaption>Stepping through KPDT volumes from a January 2026 operation. Candidate seeding signatures are
+          outlined, and the 3-D cross section shows their vertical structure over the terrain.</figcaption>
+      </figure>
+      <div class="feature">
+        <div>
+          <p>A web-based tool I built that the team now uses for all post-operation analysis. It brings every
+            data source for an operation into one place, from NEXRAD and in-house radar to proprietary
+            atmospheric data such as drone sensors.</p>
+          <p class="muted">I release it in versions and maintain automated Python and JavaScript test suites so
+            analysts can count on it during the season.</p>
+        </div>
+        <ul>
+          <li>Draw polygons to isolate seeding signatures and track them from volume to volume.</li>
+          <li>Run the QPE workflow on those polygons directly.</li>
+          <li>Open terrain-aware 2-D and 3-D cross sections.</li>
+          <li>Export figures ready for reports.</li>
         </ul>
       </div>
-      <img src="assets/img/KPDT_Case.gif" alt="KPDT Case" style="width:100%;height:auto;margin:1.2rem 0 1.5rem 0;border-radius:12px;object-fit:cover;">
-      <img src="assets/img/33RadarViewer.png" alt="RadarViewer tool example" style="width:100%;height:auto;margin:1.2rem 0 1.5rem 0;border-radius:12px;object-fit:cover;">
-      <p class="small" style="margin-top:-0.7rem;">Example output from my RadarViewer tool, which supports terrain-aware cross sections and operational overlays for rapid interpretation.</p>
-      <!-- <iframe
-        src="https://drive.google.com/file/d/1Gk_7kfr2bhCroOfQKGlpJZYoo_67q7Fe/preview"
-        title="QPE Animation"
-        loading="lazy"
-        style="width:100%;aspect-ratio:25/19;border:0;border-radius:12px;"
-        allow="autoplay"
-      ></iframe> -->
-    </div>
-  </section>
-  
+    </section>
+
+    <section class="section">
+      <h2>What I've built &amp; led</h2>
+      <div class="projects">
+        <div class="project" id="qpe">
+          <h3>QPE &amp; validation framework</h3>
+          <p>Developed Rainmaker's first quantitative precipitation estimation framework and the end-to-end radar
+            validation pipeline around it. The pipeline identifies seeding signatures, isolates the precipitation
+            enhancement, and quantifies it. I coded the whole pipeline, including customizable composite
+            reflectivity generation and a 27-member QPE ensemble.</p>
+        </div>
+        <div class="project">
+          <h3>Season operations</h3>
+          <p>Lead radar analyst for the 2025–2026 Pendleton, OR field season. I identified 55 seeding signatures
+            across 52 intensive observation periods and wrote more than 40 validation reports over the season.</p>
+        </div>
+        <div class="project">
+          <h3>Automated reporting</h3>
+          <p>I'm leading the work to automate validation reports across several program areas. The system combines
+            public and proprietary data on atmospheric conditions, seeding flights, and candidate signatures into
+            one report that analysts can check and verify.</p>
+        </div>
+        <div class="project">
+          <h3>3-D mission replay</h3>
+          <p>Built a tool that replays a complete IOP in 3-D, showing drone tracks, radar fields, seeding-signature
+            polygons, and balloon flight paths together. I'm now extending it to visualize hypothetical scenarios when
+            planning operations in new areas.</p>
+        </div>
+        <div class="project">
+          <h3>Season analysis &amp; publication</h3>
+          <p>Leading a first-author paper on the 2025–2026 season. It includes a bulk statistical analysis of
+            seeding signatures and how their properties relate to atmospheric conditions, with the goal of
+            informing how future operations are designed. Early results were presented at the
+            <a href="https://ams.confex.com/ams/2026Summit/meetingapp.cgi/Paper/483299">2026 AMS Summit</a>.</p>
+        </div>
+        <div class="project">
+          <h3>Communicating results</h3>
+          <p>Presented results to internal stakeholders, to external customers including state water-resource
+            agencies, and at academic conferences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="feature">
+        <div>
+          <h2>QPE in practice</h2>
+          <p>Rain rate and accumulated precipitation from the Pendleton, OR (KPDT) WSR-88D, computed with the QPE
+            framework. Accumulations like these are the core quantitative piece of each validation report.</p>
+          <p class="muted">Other data I regularly combine with the radar: HRRR model guidance, ASOS and SNOTEL observations,
+            satellite imagery, and in-situ measurements from drones and balloons.</p>
+        </div>
+        <figure>
+          <div class="media light">
+            <video src="assets/img/kpdt-case.mp4" poster="assets/img/kpdt-case-poster.jpg"
+                   autoplay muted loop playsinline preload="metadata"
+                   aria-label="Animated rain rate and total QPE maps near the KPDT radar"></video>
+          </div>
+          <figcaption>Rain rate (left) and running total QPE (right) near KPDT.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tools &amp; methods</h2>
+      <ul class="tags">
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Fortran</li>
+        <li>Automated testing &amp; versioned releases</li>
+        <li>Radar QC &amp; filtering</li>
+        <li>Quantitative precipitation estimation</li>
+        <li>Dual-polarization analysis</li>
+        <li>NEXRAD / WSR-88D</li>
+        <li>HRRR</li>
+        <li>ASOS &amp; SNOTEL</li>
+        <li>Satellite data</li>
+        <li>3-D visualization</li>
+        <li>Technical writing</li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="small">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
-      <div class="small">martin@makerain.com</div>
+    <div class="container">
+      <span>© <span id="year"></span> Martin Satrio</span>
+      <nav aria-label="Social">
+        <a href="mailto:martin@makerain.com">Email</a>
+        <a href="https://www.linkedin.com/in/martin-satrio">LinkedIn</a>
+        <a href="assets/cv-llt.pdf">CV</a>
+      </nav>
     </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -3,90 +3,152 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home — Martin Satrio</title>
-  <meta name="description" content="A clean, modern personal website with a soft light theme.">
+  <title>Martin Satrio, Ph.D. — Meteorological Radar Scientist</title>
+  <meta name="description" content="Martin Satrio is a meteorological radar scientist at Rainmaker, building radar-based precipitation estimation and validation tools. Ph.D. in Meteorology, University of Oklahoma.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Martin Satrio, Ph.D. — Meteorological Radar Scientist">
+  <meta property="og:description" content="Radar meteorology, quantitative precipitation estimation, and severe storms research.">
+  <meta property="og:image" content="https://martinsatrio.github.io/assets/img/og-image.jpg">
+  <meta property="og:url" content="https://martinsatrio.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <div class="name-banner"><span class="name-banner-text">Martin Satrio, Ph.D.</span></div>
   <header class="site-header">
     <div class="container">
-      <div class="navbar nav">
+      <a class="brand" href="index.html">Martin Satrio</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="work.html">Current Work</a>
-        <a href="research.html">Past Research</a>
+        <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
-    </div>
     </div>
   </header>
 
-
-  <main id="content" class="container">
-    
-  <section class="hero">
-    <div class="hero-card">
-      <img src="assets/img/launchingsounding.jpg" alt="Hero Banner" style="width:100%;height:auto;margin-bottom:1.5rem;border-radius:12px;object-fit:cover;">
-      <h1>Martin Satrio, Ph.D.</h1>
-      <h2><em>Meteorological Radar Scientist</em>, Rainmaker Technology Corporation, Norman, OK</h2>
-      <p class="lead"> Welcome! I am a Meteorological Radar Scientist on the research team at Rainmaker where I design and optimize radar-based 
-        precipitation estimation and visualization systems to improve cloud seeding strategies and support sustainable water resource management. 
-        I previously completed my postdoc at the Cooperative Institute for Severe and High-Impact Weather Research and Operations (CIWRO). Additionally, 
-        I have previously earned my Ph.D., M.S., and B.S. in Meteorology as well as my B.A. in Mathematics all from the University of Oklahoma. My published 
-        work has focused on using research and operational radar data to investigate severe weather, especially relating to supercell and tornado dynamics.</p>
-      <div style="margin-top:1.25rem; display:flex; gap:.6rem; flex-wrap:wrap">
-        <a class="btn" href="about.html">Learn more</a>
-        <a class="btn outline" href="contact.html">Get in touch</a>
+  <main class="container">
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Radar Meteorology · Precipitation Estimation · Severe Storms</p>
+        <h1>Martin Satrio, Ph.D.</h1>
+        <p class="role">Meteorological Radar Scientist at <a href="https://www.rainmaker.com/">Rainmaker</a> · Norman, OK</p>
+        <p>I build radar-based precipitation estimation and validation tools that help Rainmaker
+          measure the effects of its cloud seeding operations. That covers the science (QPE, dual-pol
+          analysis, identifying seeding signatures) and the software analysts use every day.</p>
+        <p>Before Rainmaker, I spent a decade at the University of Oklahoma studying supercells and
+          tornadoes with mobile, airborne, and operational radar data, ending with a postdoc at CIWRO.
+          I hold a Ph.D., M.S., and B.S. in Meteorology and a B.A. in Mathematics from OU.</p>
+        <div class="btn-row">
+          <a class="btn" href="work.html">See my work</a>
+          <a class="btn outline" href="assets/cv-llt.pdf">CV (PDF)</a>
+          <a class="btn outline" href="https://www.linkedin.com/in/martin-satrio">LinkedIn</a>
+          <a class="btn outline" href="mailto:martin@makerain.com">Email</a>
+        </div>
       </div>
-    </div>
-  </section>
+      <img class="headshot" src="assets/img/headshot.webp" alt="Portrait of Martin Satrio" width="640" height="800">
+    </section>
 
-  <section class="section">
-    <h2>Quick Links</h2>
-    <div class="grid">
-      <a class="card feature" href="work.html">
-        <h3>Current Work</h3>
-        <p>Radar-based precipitation estimation and visualization systems at Rainmaker.</p>
-      </a>
-      <a class="card feature" href="research.html">
-        <h3>Research</h3>
-        <p>Previous research focusing on supercells and tornadoes at the University of Oklahoma.</p>
-      </a>
-      <a class="card feature" href="publications.html">
-        <h3>Publications</h3>
-        <p>Published articles and conference proceedings.</p>
-      </a>
-      <a class="card stat" href="cv.html">
-        <h3>Resume / CV</h3>
-        <p>Check out my CV here.</p>
-      </a>
-      <a class="card stat" href="contact.html">
-        <h3>Contact Info</h3>
-        <p>Interested in collaborating or learning more? Reach out!</p>
-      </a>
-    </div>
-  </section>
-  
+    <section class="section">
+      <h2>What I do</h2>
+      <div class="focus-grid">
+        <div>
+          <span class="num">01</span>
+          <h3>Radar QPE &amp; validation</h3>
+          <p>I designed Rainmaker's first quantitative precipitation estimation framework and the pipeline
+            used to find, isolate, and quantify seeding signatures in radar data.</p>
+        </div>
+        <div>
+          <span class="num">02</span>
+          <h3>Scientific software</h3>
+          <p>I write the tools behind the analysis, including a web-based radar viewer, a 3-D mission replay, and automated
+            reporting, all in Python and JavaScript with versioned releases and automated tests.</p>
+        </div>
+        <div>
+          <span class="num">03</span>
+          <h3>Severe storms research</h3>
+          <p>I've published on supercell dynamics and tornadoes using multi-Doppler syntheses, Lagrangian
+            retrievals, and large-eddy simulations. I've also worked many field campaigns.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Selected work</h2>
+      </div>
+      <div class="card-grid">
+        <a class="card" href="work.html#radar-viewer">
+          <img src="assets/img/radar-viewer-poster.jpg" alt="Radar viewer showing reflectivity with seeding-signature polygons over eastern Oregon" loading="lazy">
+          <div class="card-body">
+            <div class="card-tag">Rainmaker</div>
+            <h3>Radar Viewer</h3>
+            <p>An internal web tool for loading post-operation data, outlining signatures, and running QPE.</p>
+          </div>
+        </a>
+        <a class="card" href="work.html#qpe">
+          <img src="assets/img/kpdt-case-poster.jpg" alt="Rain rate and total QPE maps near the KPDT radar" loading="lazy">
+          <div class="card-body">
+            <div class="card-tag">Rainmaker</div>
+            <h3>QPE &amp; validation pipeline</h3>
+            <p>A 27-member QPE ensemble and an end-to-end workflow for validating seeding outcomes.</p>
+          </div>
+        </a>
+        <a class="card" href="research.html#phd">
+          <img src="assets/img/phd2.webp" alt="Triple-Doppler analysis of the 17 May 2019 supercell" loading="lazy">
+          <div class="card-body">
+            <div class="card-tag">Ph.D. research</div>
+            <h3>The 17 May 2019 TORUS supercell</h3>
+            <p>Triple-Doppler and diabatic Lagrangian analysis of a cyclic tornadic supercell in Nebraska.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Recent</h2>
+        <a href="publications.html">All publications →</a>
+      </div>
+      <ul class="news">
+        <li>
+          <time>2026</time>
+          <span>Presented <em>“Evolution of Radar Seeding Signatures: Insights from the 2025–2026 Rainmaker Season”</em>
+            at the AMS Summit (25th Conf. on Planned and Inadvertent Weather Modification), Madison, WI.</span>
+        </li>
+        <li>
+          <time>2026</time>
+          <span>Published <a href="https://doi.org/10.1175/WAF-D-25-0240.1">“The Effects of a Veer–Back–Veer Wind Profile
+            and the Effective Inflow-Layer Depth on Supercell Evolution”</a> in <em>Weather and Forecasting</em>.</span>
+        </li>
+        <li>
+          <time>2025–26</time>
+          <span>Served as lead radar analyst for Rainmaker's Pendleton, OR operations. I identified 55 seeding signatures across 52 IOPs.</span>
+        </li>
+        <li>
+          <time>Sep 2025</time>
+          <span>Joined Rainmaker as a Meteorological Radar Scientist after my postdoc at CIWRO.</span>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="small">© <span id="year"></span> Martin Satrio. All rights reserved.</div>
-      <div class="small">martin@makerain.com</div>
+    <div class="container">
+      <span>© <span id="year"></span> Martin Satrio</span>
+      <nav aria-label="Social">
+        <a href="mailto:martin@makerain.com">Email</a>
+        <a href="https://www.linkedin.com/in/martin-satrio">LinkedIn</a>
+        <a href="assets/cv-llt.pdf">CV</a>
+      </nav>
     </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

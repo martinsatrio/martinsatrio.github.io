@@ -1,23 +1,20 @@
+# martinsatrio.github.io
 
-# SoftLight Site
+Personal website for Martin Satrio, Ph.D. Plain HTML and CSS served by GitHub Pages, with no build step.
 
-A clean, modern, multi‑page personal website with a light theme and soft colors.
+## Layout
+- `index.html`, `about.html`, `work.html`, `research.html`, `publications.html`, `cv.html`, `contact.html`
+- `assets/css/styles.css` — all styling; colors and fonts are variables at the top
+- `assets/js/main.js` — mobile menu, active nav link, footer year
+- `assets/img/` — images (WebP/JPG) and short MP4 loops
+- `assets/cv-llt.pdf` — CV linked across the site
 
-## How to use
+The header and footer are repeated in each page, so nav changes need to be made in all seven files.
 
-1. Replace text like "Your Name" and example content across pages.
-2. Put your CV at `assets/cv/CV.pdf` (update the button text if you like).
-3. Update the email in `contact.html` (search for `mailto:you@example.com`).
-4. Optional: Replace `assets/img/favicon.svg` with your own favicon/logo.
-5. Deploy by uploading the folder to any static host (GitHub Pages, Netlify, Vercel, etc.).
+## Preview locally
+    python3 -m http.server 8000
+then open http://localhost:8000.
 
-## Pages
-- `index.html` — Home
-- `about.html` — About Me
-- `work.html` — Current Work
-- `research.html` — Research
-- `publications.html` — Publications
-- `cv.html` — CV
-- `contact.html` — Contact
-
-Enjoy!
+## Adding images
+Keep images under ~1800px wide. For example:
+    magick input.png -resize '1800x1800>' -quality 82 assets/img/name.webp
