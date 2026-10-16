@@ -118,23 +118,21 @@
     </section>
 
     <section class="section">
-      <div class="feature">
-        <div>
-          <h2>QPE in practice</h2>
-          <p>Rain rate and accumulated precipitation from the Pendleton, OR (KPDT) WSR-88D, computed with the QPE
-            framework. Accumulations like these are the core quantitative piece of each validation report.</p>
-          <p class="muted">Other data I regularly combine with the radar: HRRR model guidance, ASOS and SNOTEL observations,
-            satellite imagery, and in-situ measurements from drones and balloons.</p>
+      <h2>QPE in practice</h2>
+      <p class="narrow" style="margin-left:0">The 27-member Z<sub>e</sub>–R ensemble running through one IOP. Composite reflectivity and
+        instantaneous precipitation rate (A, B) build into total QPE (C). Inside the analyst-drawn
+        signature polygon, the ensemble gives a range of integrated water volume over time (D), not
+        a single number. Accumulations like these are the core quantitative piece of each validation report.</p>
+      <figure class="showcase" style="margin-top:1.5rem">
+        <div class="media">
+          <video src="assets/img/qpe-ensemble.mp4" poster="assets/img/qpe-ensemble-poster.jpg"
+                 autoplay muted loop playsinline preload="metadata"
+                 aria-label="Animated QPE ensemble: composite reflectivity, precipitation rate, total QPE, and polygon-integrated accumulation over an IOP"></video>
         </div>
-        <figure>
-          <div class="media light">
-            <video src="assets/img/kpdt-case.mp4" poster="assets/img/kpdt-case-poster.jpg"
-                   autoplay muted loop playsinline preload="metadata"
-                   aria-label="Animated rain rate and total QPE maps near the KPDT radar"></video>
-          </div>
-          <figcaption>Rain rate (left) and running total QPE (right) near KPDT.</figcaption>
-        </figure>
-      </div>
+        <figcaption>Ensemble spread is shown as 5–95% and 25–75% bands around the mean, with beam-blockage filtering applied.</figcaption>
+      </figure>
+      <p class="muted" style="margin:0">Other data I regularly combine with the radar: HRRR model guidance, ASOS and SNOTEL observations,
+        satellite imagery, and in-situ measurements from drones and balloons.</p>
     </section>
 
     <section class="section">
