@@ -39,8 +39,8 @@
         I own the radar side of the question everyone asks: <em>did the seeding work, and by how much?</em></p>
 
       <div class="stats">
-        <div class="stat"><strong>55</strong><span>seeding signatures identified in the 2025–26 season</span></div>
-        <div class="stat"><strong>52</strong><span>IOPs analyzed as lead radar analyst (Pendleton, OR)</span></div>
+        <div class="stat"><strong>55</strong><span>seeding signatures I identified across 52 Pendleton, OR IOPs</span></div>
+        <div class="stat"><strong>71</strong><span>radar-observed enhancements across all program areas (2025–26)</span></div>
         <div class="stat"><strong>40+</strong><span>validation reports written in one season</span></div>
         <div class="stat"><strong>27</strong><span>members in the QPE ensemble I developed</span></div>
       </div>
@@ -75,6 +75,38 @@
       </div>
     </section>
 
+    <section class="section" id="mission-replay">
+      <p class="eyebrow">Featured project</p>
+      <h2>3-D mission replay</h2>
+      <figure class="showcase">
+        <div class="media">
+          <video src="assets/img/mission-replay.mp4" poster="assets/img/mission-replay-poster.jpg"
+                 autoplay muted loop playsinline controls preload="metadata"
+                 aria-label="3-D replay of a cloud seeding operation showing drone releases, radar-tracked seeding signatures drifting downwind, and accumulating precipitation"></video>
+        </div>
+        <figcaption>A January 2026 Pendleton, OR operation replayed from the real data: drone releases, radar-tracked
+          seeding signatures drifting downwind over the terrain, balloon soundings updating the winds aloft, and the
+          ensemble precipitation estimate accumulating as the replay advances.</figcaption>
+      </figure>
+      <div class="feature">
+        <div>
+          <p>Radar data on its own is hard to read for anyone who doesn't look at it every day. The mission replay
+            puts an entire operation into one three-dimensional scene, so a scientist, a client, or a prospective
+            partner can watch seeding material being released, see the resulting signature develop and drift
+            downwind, and follow the precipitation it produced.</p>
+          <p class="muted">Built with Three.js and Python from radar volumes, analyst-confirmed signature polygons,
+            drone GPS telemetry, balloon soundings, ensemble QPE, and SRTM terrain. It covers 16 operations across
+            four program areas and is being extended to visualize prospective operations in new domains.</p>
+        </div>
+        <ul>
+          <li>Replay any operation at adjustable speed, or follow a guided cinematic tour.</li>
+          <li>A mission log tracks each seeding wave and the signature it produced.</li>
+          <li>Winds aloft and running precipitation totals update with the replay.</li>
+          <li>Toggle 3-D echoes, radar layers, accumulation, and wind vectors.</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="section">
       <h2>What I've built &amp; led</h2>
       <div class="projects">
@@ -88,31 +120,28 @@
         <div class="project">
           <h3>Season operations</h3>
           <p>Lead radar analyst for the 2025–2026 Pendleton, OR field season. I identified 55 seeding signatures
-            across 52 intensive observation periods and wrote more than 40 validation reports over the season.</p>
+            across 52 intensive observation periods and wrote more than 40 validation reports, each quantifying the
+            precipitation produced and the atmospheric and operational variables behind the outcome.</p>
         </div>
         <div class="project">
           <h3>Automated reporting</h3>
-          <p>I'm leading the work to automate validation reports across several program areas. The system combines
-            public and proprietary data on atmospheric conditions, seeding flights, and candidate signatures into
-            one report that analysts can check and verify.</p>
-        </div>
-        <div class="project">
-          <h3>3-D mission replay</h3>
-          <p>Built a tool that replays a complete IOP in 3-D, showing drone tracks, radar fields, seeding-signature
-            polygons, and balloon flight paths together. I'm now extending it to visualize hypothetical scenarios when
-            planning operations in new areas.</p>
+          <p>I'm leading the work to automate validation reports across several program areas. The pipeline pulls
+            MRMS, GOES-18, HRRR and GFS fields, ceilometer data, soundings, and drone telemetry, combines them with
+            seeding flight logs and candidate signatures, and assembles a draft report that analysts check and finalize.</p>
         </div>
         <div class="project">
           <h3>Season analysis &amp; publication</h3>
-          <p>Leading a first-author paper on the 2025–2026 season. It includes a bulk statistical analysis of
-            seeding signatures and how their properties relate to atmospheric conditions, with the goal of
-            informing how future operations are designed. Early results were presented at the
+          <p>First author of a paper on the 2025–2026 season, now in revision at <em>Atmosphere</em>. It documents
+            71 radar-observed precipitation enhancements across all program areas, with a bulk statistical analysis
+            of how their properties relate to atmospheric conditions, to inform how future operations are designed.
+            Early results were presented at the
             <a href="https://ams.confex.com/ams/2026Summit/meetingapp.cgi/Paper/483299">2026 AMS Summit</a>.</p>
         </div>
         <div class="project">
           <h3>Communicating results</h3>
-          <p>Presented results to internal stakeholders, to external customers including state water-resource
-            agencies, and at academic conferences.</p>
+          <p>I work with business development and brand/comms to turn scientific results into client-facing figures,
+            validation summaries, and proposal material, and have presented to state water-resource agencies,
+            internal stakeholders, and academic conferences.</p>
         </div>
       </div>
     </section>
@@ -131,25 +160,34 @@
         </div>
         <figcaption>Ensemble spread is shown as 5–95% and 25–75% bands around the mean, with beam-blockage filtering applied.</figcaption>
       </figure>
-      <p class="muted" style="margin:0">Other data I regularly combine with the radar: HRRR model guidance, ASOS and SNOTEL observations,
-        satellite imagery, and in-situ measurements from drones and balloons.</p>
+      <p class="muted" style="margin:0">Other data I regularly combine with the radar: MRMS, GOES-18 satellite products, HRRR and GFS
+        model guidance, ASOS and SNOTEL observations, ceilometers, and in-situ measurements from drones and balloons.</p>
     </section>
 
     <section class="section">
       <h2>Tools &amp; methods</h2>
       <ul class="tags">
         <li>Python</li>
-        <li>JavaScript</li>
+        <li>xarray · pandas · NumPy</li>
+        <li>Py-ART</li>
+        <li>MetPy</li>
+        <li>Cartopy</li>
+        <li>JavaScript / Three.js</li>
         <li>Fortran</li>
-        <li>Automated testing &amp; versioned releases</li>
+        <li>NetCDF · GRIB2 · Zarr · GeoJSON</li>
+        <li>AWS · Modal · HPC</li>
+        <li>WRF · CM1</li>
+        <li>NEXRAD / WSR-88D</li>
+        <li>MRMS</li>
+        <li>GOES</li>
+        <li>HRRR · GFS</li>
+        <li>ASOS/METAR · SNOTEL</li>
         <li>Radar QC &amp; filtering</li>
         <li>Quantitative precipitation estimation</li>
         <li>Dual-polarization analysis</li>
-        <li>NEXRAD / WSR-88D</li>
-        <li>HRRR</li>
-        <li>ASOS &amp; SNOTEL</li>
-        <li>Satellite data</li>
+        <li>Forecast verification</li>
         <li>3-D visualization</li>
+        <li>Automated testing &amp; versioned releases</li>
         <li>Technical writing</li>
       </ul>
     </section>
@@ -159,7 +197,7 @@
     <div class="container">
       <span>© <span id="year"></span> Martin Satrio</span>
       <nav aria-label="Social">
-        <a href="mailto:martin@makerain.com">Email</a>
+        <a href="mailto:martin.satrio@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/martin-satrio">LinkedIn</a>
         <a href="assets/cv-llt.pdf">CV</a>
       </nav>
